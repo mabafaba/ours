@@ -1,0 +1,55 @@
+{
+  "name": "ours",
+  "version": "0.0.0",
+  "private": true,
+  "description": "MISSING DESCRIPTION",
+  "keywords": [
+    "example",
+    "express",
+    "passport",
+    "sqlite"
+  ],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "https://github.com/mabafaba/ours",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mabafaba/ours.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mabafaba/ours/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": ""
+  },
+  "license": "",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test":"mocha 'test'"
+  },
+  "dependencies": {
+    "connect-sqlite3": "^0.9.13",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.6.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "mkdirp": "^1.0.4",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.16",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pluralize": "^8.0.0",
+    "sequelize": "^6.21.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
