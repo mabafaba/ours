@@ -4,7 +4,6 @@
 - `npm start` to start server
 - `npm test` to run unit tests
 
-
 ## App structure
 
 - `/config/db` database config
@@ -18,11 +17,9 @@
 - `/test` unit tests
 - `/bin/www` app startup script
 
-
 ## Endpoints
 
 ### Authentification
-
 
 #### `GET /signup` open page
 
@@ -33,23 +30,23 @@
 currently also returns all services as json response to make debugging easier
 
 example url/curl:
-```curl localhost:3000/logusers```
-
+`curl localhost:3000/logusers`
 
 #### `POST /signup` create new user
 
 Creates a new user, then logs in as that user.
 Request body accepts:
+
 - username
 - password
 - email
 
-```curl -X 'POST' -H "Content-Type: application/json" -d '{"username":"Hannah Arendt", "password":"banalityofevil"}' localhost:3000/signup```
-
+`curl -X 'POST' -H "Content-Type: application/json" -d '{"username":"Hannah Arendt", "password":"banalityofevil"}' localhost:3000/signup`
 
 #### `POST /login/password` try loggin in
 
 Request body accepts:
+
 - username
 - password
 
@@ -62,7 +59,6 @@ curl -X 'POST' -H "Content-Type: application/json" -d '{"username":"Hannah Arend
 
 #### `POST /logout` log out
 
-
 ### Services
 
 Services are events or similar things that users can "host".
@@ -71,24 +67,16 @@ Services are events or similar things that users can "host".
 
 example curl:
 
-```curl -X 'POST' -H "Content-Type: application/json" -d '{"name":"Die Freiheit Frei zu sein aaa", "userid":1}' localhost:3000/service```
+`curl -X 'POST' -H "Content-Type: application/json" -d '{"name":"Die Freiheit Frei zu sein aaa", "userid":1}' localhost:3000/service`
 
 (userid in body only for debugging purposes. In browser handled via passport session.)
-
 
 #### `GET /logservices` show all services in server console
 
 currently also returns all services as json response to make debugging easier
 
 example url/curl:
-```curl localhost:3000/logservices```
-
-
-
-
-
-
-
+`curl localhost:3000/logservices`
 
 ## Install & Start Server
 
@@ -105,5 +93,6 @@ npm start
 - I set up the authentication (as well as overall app structure) following this tutorial: https://www.passportjs.org/tutorials/password/
 
 ## LINT
+
 Reformat complete codebase with
 `npx prettier --write .`

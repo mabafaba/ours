@@ -29,7 +29,7 @@
   "license": "",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test":"mocha 'test'"
+    "test": "mocha 'test'"
   },
   "dependencies": {
     "connect-sqlite3": "^0.9.13",
