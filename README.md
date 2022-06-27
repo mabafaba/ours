@@ -1,9 +1,22 @@
+## Getting started
+
+- `npm install` the first time you run the app. Then:
+- `npm start` to start server
+- `npm test` to run unit tests
+
+
 ## App structure
 
-- /routes api endpoints
-- /var data storage
-- /views user interface
-- /db.js database setup
+- `/config/db` database config
+- `/config/passport` user authentification config
+
+
+Following "model view controller" app structure:
+
+- `/models` defining data models
+- `/views` user interfaces (ejs to be depreciated)
+- `/controllers` communicating between endpoints and data model
+- `/routes/index` endpoints
 
 
 ## Endpoints
