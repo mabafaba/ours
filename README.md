@@ -10,13 +10,13 @@
 - `/config/db` database config
 - `/config/passport` user authentification config
 
-
-Following "model view controller" app structure:
-
+- `app.js` main app
 - `/models` defining data models
 - `/views` user interfaces (ejs to be depreciated)
 - `/controllers` communicating between endpoints and data model
-- `/routes/index` endpoints
+- `/routes/index` endpoint routes
+- `/test` unit tests
+- `/bin/www` app startup script
 
 
 ## Endpoints
